@@ -1,0 +1,17 @@
+
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    /* background: grey; */
+    background-image: url('https://images6.alphacoders.com/857/857752.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+
+}

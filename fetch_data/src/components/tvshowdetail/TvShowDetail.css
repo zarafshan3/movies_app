@@ -1,0 +1,9 @@
+.detail{
+    width: 100%;
+    min-height: calc(100%-400px);
+    /* background: pink; */
+    float: left;
+    padding: 20px 40px;
+    color: #fff;
+    padding-top: 100px;
+}
