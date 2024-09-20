@@ -2,32 +2,23 @@ import TvShowListItems from '../tvshowlistitems/TvShowListItems';
 import './TvShowList.css'
 
 
-const TvShowList = () =>{
+const TvShowList = ({tvRecommendations,onClickItem}) =>{
+    // console.log(tvRecommendations)
     return(
         <div className="list">
             <h4>You'll probably like :</h4>
 
             <div className="items">
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
-                <TvShowListItems/>
 
+                
+                {
+                    tvRecommendations.map(recommendation => {
+                        return(
+                            <TvShowListItems key={recommendation.id} recommendation={recommendation} onClickItem={onClickItem}/>
+                        )
+                    })
+                }
+                
             </div>
         </div>
     )

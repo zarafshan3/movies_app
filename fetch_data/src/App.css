@@ -15,3 +15,42 @@ body{
     float: left;
 
 }
+
+.scrollable-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #14087c;
+    border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #0d29a5;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #14087c;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0d29a5;
+  }
